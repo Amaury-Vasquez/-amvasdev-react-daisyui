@@ -36,17 +36,20 @@
   "devDependencies": {
     "@types/react": "^18.2.15",
     "daisyui": "^3.2.1",
+    "microbundle": "^0.15.1",
+    "np": "^8.0.4",
     "react": "^18.2.0",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6",
-    "microbundle": "^0.15.1"
+    "typescript": "^5.1.6"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=16.8.0",
     "npm": ">=7.5.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "np": {
+    "contents": "dist"
   }
 }
