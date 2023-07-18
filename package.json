@@ -12,7 +12,7 @@
   "module": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "microbundle --compress --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react --output dist",
+    "build": "microbundle --compress --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react --output dist && cp package.json dist/package.json && cp README.md dist/README.md",
     "dev": "microbundle watch",
     "test": "test"
   },
