@@ -49,6 +49,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "np": {
+    "yarn": false,
     "contents": "dist"
   }
 }
