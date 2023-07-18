@@ -1,18 +1,18 @@
 {
   "name": "@amvasdev/react-daisyui",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "source": "src/index.ts",
   "exports": {
     "require": "./dist/index.cjs",
     "import": "./dist/index.modern.js"
   },
   "description": "Customizable react components that include daisyui and tailwind classes",
-  "main": "index.cjs",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "microbundle --compress --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react --output dist && cp package.json dist/package.json && cp README.md dist/README.md",
+    "build": "microbundle --compress --tsconfig tsconfig.json --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react --output dist && cp package.json dist/package.json && cp README.md dist/README.md",
     "dev": "microbundle watch",
     "test": "test"
   },
