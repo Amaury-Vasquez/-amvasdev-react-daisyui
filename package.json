@@ -41,5 +41,8 @@
   },
   "dependencies": {
     "microbundle": "^0.15.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
